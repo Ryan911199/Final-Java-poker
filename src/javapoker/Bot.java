@@ -1,4 +1,4 @@
-package javapoker;
+package src.javapoker;
 
 
 public class Bot {

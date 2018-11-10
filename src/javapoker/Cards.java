@@ -1,4 +1,4 @@
-package javapoker;
+package src.javapoker;
 
 import java.awt.image.BufferedImage;
 
