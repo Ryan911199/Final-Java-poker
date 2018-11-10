@@ -22,6 +22,9 @@ public class Cards {
      public BufferedImage getCardImage(){
         return cardImage;
     }
+       public String getsuit(){
+        return suit;
+    }
       public int getScore(){
         return vals;
     }

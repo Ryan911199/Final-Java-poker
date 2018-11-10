@@ -10,8 +10,8 @@ public class Player {
 		hand = new Cards[2];
 		name = Name;
 	}
-	public void setHand(Cards cardOne, Cards cardTwo) {
-		hand[0] = cardOne;
-		hand[1] = cardTwo;
+	public void setHand(Cards cardOne, int i) {
+		hand[i] = cardOne;
+		
 	}
 }

@@ -132,6 +132,7 @@ public class Deck {
 //		deckArray[i] = -1;
 		return cardsArray.get(i);
 	}
+       
 	public void shuffle (){
 		for (int i = 0; i < deckArray.length; i++){
 			deckArray[i] = i;
