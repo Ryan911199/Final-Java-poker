@@ -12,7 +12,7 @@ public class Bot {
 		name = Name;
 	}
 	public void setHand(Cards cardOne, Cards cardTwo) {
-		hand[1] = cardOne;
-		hand[2] = cardTwo;
+		hand[0] = cardOne;
+		hand[1] = cardTwo;
 	}
 }

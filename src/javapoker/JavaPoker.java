@@ -5,6 +5,9 @@ package javapoker;
 import java.awt.Color;
 import java.awt.event.*;
 import java.io.File;
+
+import java.awt.Color;
+
 import java.io.IOException;
 
 import java.util.ArrayList;
@@ -34,11 +37,13 @@ public class JavaPoker {
 
     public JavaPoker() throws IOException {
 
+
         Cards chip1 = new Cards(1, ImageIO.read(new File("Chip1.png")), "null");
         Cards chip5 = new Cards(5, ImageIO.read(new File("Chip5.png")), "null");
         Cards chip10 = new Cards(10, ImageIO.read(new File("Chip10.png")), "null");
         Cards chip25 = new Cards(25, ImageIO.read(new File("Chip25.png")), "null");
         Cards chip100 = new Cards(100, ImageIO.read(new File("Chip100.png")), "null");
+
 
         JLayeredPane pane = new JLayeredPane();
         JFrame mainFrame = new JFrame("Panel Example");
@@ -76,6 +81,7 @@ public class JavaPoker {
         flopCard.setBounds(1350, 350, 200, 300);
 
 
+
         JLabel label = new JLabel(new ImageIcon(chip1.getCardImage()));
         JLabel label5 = new JLabel(new ImageIcon(chip5.getCardImage()));
         JLabel label10 = new JLabel(new ImageIcon(chip10.getCardImage()));
@@ -92,6 +98,7 @@ public class JavaPoker {
         amountofMoney.setBounds(1750, 775, 150, 150);
 
 
+
         pane.add(playercard1, new Integer(1));
         pane.add(playercard2, new Integer(2));
         pane.add(droidcard1, new Integer(2));
@@ -105,6 +112,7 @@ public class JavaPoker {
         pane.add(riverCard3, new Integer(0));
         pane.add(turnCard, new Integer(0));
         pane.add(flopCard, new Integer(0));
+
 
         pane.add(label);
         pane.add(label5);
