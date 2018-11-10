@@ -1,5 +1,7 @@
 package src.javapoker;
 
+import java.util.Collections;
+
 public class Hand_Eval {
 	Cards hand1[];
 	Cards hand2[];
@@ -12,7 +14,7 @@ public class Hand_Eval {
 		hand3 = handThree;
 		hand4 = handFour;
 	}
-//	public evaluateHand(){
-//
-//	}
+	public void sort(Cards[] hand){
+
+	}
 }
