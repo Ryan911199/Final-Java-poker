@@ -1,4 +1,4 @@
-package src.javapoker;
+package javapoker;
 
 public class Hand_Eval {
 	Cards hand1[];

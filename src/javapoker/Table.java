@@ -1,4 +1,4 @@
-package src.javapoker;
+package javapoker;
 
 import java.io.IOException;
 import java.util.logging.Handler;

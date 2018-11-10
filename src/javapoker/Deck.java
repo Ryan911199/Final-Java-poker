@@ -1,4 +1,4 @@
-package src.javapoker;
+package javapoker;
 import javax.imageio.ImageIO;
 import java.io.*;
 import java.util.ArrayList;
