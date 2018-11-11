@@ -15,26 +15,30 @@ public class Table {
     Bot botThree;
     int startingCHips = 1500;
     Cards comHand[];
+    
+    int playerBet = 0;
 
     public Table() throws IOException {
         deck = new Deck();
         comHand = new Cards[5];
         player = new Player(startingCHips, "Tom");
         botOne = new Bot(startingCHips, "Droid");
-        botTwo = new Bot(startingCHips, "C3PO");;
-        botThree = new Bot(startingCHips, "R2D2");;
+        botTwo = new Bot(startingCHips, "C3PO");
+        botThree = new Bot(startingCHips, "R2D2");
     }
 
-    public void dealHands() {
+    public void dealHands() throws IOException {
         for (int i = 0; i < 8; i++) {
             if (i == 0) {
                 player.setHand(deck.getCard(), 0);
             }
             if (i == 1) {
                 botOne.setHand(deck.getCard(), 0);
+                
             }
             if (i == 2) {
                 botTwo.setHand(deck.getCard(), 0);
+                
             }
             if (i == 3) {
                 botThree.setHand(deck.getCard(), 0);
@@ -69,7 +73,7 @@ public class Table {
     public void theRiver() {
         comHand[4] = deck.getCard();
     }
-
+   
     public void shuffle() {
         deck.shuffle();
     }
